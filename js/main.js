@@ -1,8 +1,8 @@
-var sumar = $("#sumar");
-var restar = $("#restar");
-var display = $("#contador");
-var destino = $("#destino");
-var importe = $("#importe");
+const sumar = $("#sumar");
+const restar = $("#restar");
+const display = $("#contador");
+const destino = $("#destino");
+const importe = $("#importe");
 
 let contador = 0;
 let factura = 0;
