@@ -17,7 +17,7 @@ const destinos = {
 
 sumar.on('click', sumando);
 restar.on('click', restando);
-destino.on('change', cuenta)
+destino.on('change', cuenta);
 
 function sumando() {
     contador = contador + 1;

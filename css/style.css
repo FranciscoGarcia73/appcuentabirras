@@ -1,13 +1,28 @@
 @import url('reset.css');
 
+:root {
+    --fuenteprincipal: 'Sigmar One', serif;
+    --fuentesecundaria:'Indie Flower', cursive;
+    --anchomaximo: 80%;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+}
 
 body{
     background-image: url(../images/cerveza.jpg);
 }
 .cabecera {
     display: flex;
-    /* background-image: url("../images/espuma.png"); */
     width: 100%;
     height: 200px;
     text-align: center;
@@ -17,7 +32,7 @@ body{
 
 .cabecera>h1{
     font-size: 250%;
-    font-family: 'Sigmar One';
+    font-family: var(--fuenteprincipal);
 }
 
 .container {
@@ -29,14 +44,10 @@ body{
 }
 .imagen {
    margin-top: 10%;
-   width: 80px;
+   width: 60px;
    height: auto;
 }
 
-img {
-   width: 100%;
-   height: auto;
-}
 
 .consola{
    width: 60%;
@@ -47,24 +58,38 @@ img {
  }
 
 #sumar, #restar{
-
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    appearance: none;
+    background: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4 ease;
  }
 
 #contador {
-    font-size: 150%;
-    font-family: 'Sigmar One';
+    font-size: 240%;
+    font-style: inherit;
+    font-family: var(--fuenteprincipal);
 }
 
 #destino{
     width: 248px;
     margin-top: 50px;
     padding: 10px 0 10px 0;
+    border-radius: 16px;
+    font-family: var(--fuentesecundaria);
+    font-size: 140%;
 }
  .cuenta{
+    padding: 10px;
     margin-top: 25px;
-    font-family: 'Sigmar One';
-    font-size: 120%;
+    font-family: var(--fuentesecundaria);
+    font-size: 180%;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.65);
+    box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
  }
