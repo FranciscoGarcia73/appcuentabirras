@@ -12,7 +12,8 @@ const destinos = {
     trujillo: 2.50,
     deseosDeCatrina: 2.20,
     sidreria: 2.50,
-    verde:2.20
+    verde:2.20,
+    galarzas:2.20
 }
 
 sumar.on('click', sumando);
