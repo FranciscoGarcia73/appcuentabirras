@@ -10,10 +10,10 @@ let factura = 0;
 const destinos = {
     losClaveles: 1.60,
     trujillo: 2.50,
-    deseosDeCatrina: 2.20,
+    deseosDeCatrina: 2.30,
     sidreria: 2.50,
-    verde:2.20,
-    galarzas:2.20
+    verde: 2.20,
+    galarzas: 2.20
 }
 
 sumar.on('click', sumando);
