@@ -48,18 +48,29 @@
     </header>
     <main>
       <div class="container">
-        <div class="imagen">
+        <!-- <div class="imagen">
           <img
             src="./images/mahou-clasica-removebg-preview.png"
             alt="Tercio de Mahou"
           />
-        </div>
-        <div class="consola">
-          <button id="sumar">
+        </div> -->
+        <div class="consolaTercios">
+          <button id="sumarTercios">
             <i class="fas fa-plus"></i>
           </button>
-          <p id="contador"></p>
-          <button id="restar"><i class="fas fa-minus"></i></button>
+          <div>
+            <p id="contadorTercios"></p>
+          </div>
+          <p class="bebida">Tercios</p>
+          <button id="restarTercios"><i class="fas fa-minus"></i></button>
+        </div>
+        <div class="consolaBotellines">
+          <button id="sumarBotellines">
+            <i class="fas fa-plus"></i>
+          </button>
+          <p id="contadorBotellines"></p>
+          <p class="bebida">Botellines</p>
+          <button id="restarBotellines"><i class="fas fa-minus"></i></button>
         </div>
         <div class="bares">
           <select name="destino" id="destino">

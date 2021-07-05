@@ -1,42 +1,98 @@
-const sumar = $("#sumar");
-const restar = $("#restar");
-const display = $("#contador");
+const sumarTercios = $("#sumarTercios");
+const restarTercios = $("#restarTercios");
+const sumarBotellines = $("#sumarBotellines");
+const restarBotellines = $("#restarBotellines");
+const displayTercios = $("#contadorTercios");
+const displayBotellines = $("#contadorBotellines");
 const destino = $("#destino");
 const importe = $("#importe");
 
-let contador = 0;
+let contadorTercios = 0;
+let contadorBotellines = 0;
 let factura = 0;
 
 const destinos = {
-    losClaveles: 1.60,
-    trujillo: 2.50,
-    deseosDeCatrina: 2.30,
-    sidreria: 2.50,
-    verde: 2.20,
-    galarzas: 2.20
+    losClaveles: {
+        tercio: 1.60,
+        botellin:1.40
+    },
+    trujillo: {
+        tercio: 2.50,
+        botellin: 1.50
+    } ,
+    deseosDeCatrina: {
+        tercio: 2.30,
+        botellin: 1.50
+    } ,
+    sidreria: {
+        tercio: 2.50,
+        botellin: 1.50
+    },
+    verde: {
+        tercio: 2.20,
+        botellin: 1.50
+    },
+    galarzas: {
+        tercio: 2.20,
+        botellin: 1.50
+    }
 }
 
-sumar.on('click', sumando);
-restar.on('click', restando);
+sumarTercios.on('click', ()=>contarTercios(true));
+restarTercios.on('click', ()=>contarTercios(false));
+sumarBotellines.on('click', ()=>contarBotellines(true));
+restarBotellines.on('click', ()=>contarBotellines(false));
 destino.on('change', cuenta);
 
-function sumando() {
-    contador = contador + 1;
-    display.text(contador);
+
+function contarTercios(valor) {
+    valor ? contadorTercios++ :
+        contadorTercios > 0 ? contadorTercios-- : null ;
+    displayTercios.text(contadorTercios);
     cuenta();
 
 }
 
-function restando() {
-    if (contador > 0) {
-        contador = contador - 1;
-        display.text(contador);
-        cuenta();
-    }
+function contarBotellines(valor) {
+    valor ? contadorBotellines++ :
+        contadorBotellines > 0 ? contadorBotellines-- : null;
+    displayBotellines.text(contadorBotellines);
+    cuenta();
+
 }
 
+// function sumandoTercios() {
+//     contadorTercios = contadorTercios + 1;
+//     displayTercios.text(contadorTercios);
+//     cuenta();
+
+// }
+
+// function restandoTercios() {
+//     if (contadorTercios > 0) {
+//         contadorTercios = contadorTercios - 1;
+//         displayTercios.text(contadorTercios);
+//         cuenta();
+//     }
+// }
+
+// function sumandoBotellines() {
+//     contadorBotellines = contadorBotellines + 1;
+//     displayBotellines.text(contadorBotellines);
+//     cuenta();
+
+// }
+
+// function restandoBotellines() {
+//     if (contadorBotellines > 0) {
+//         contadorBotellines = contadorBotellines - 1;
+//         displayBotellines.text(contadorBotellines);
+//         cuenta();
+//     }
+// }
+
 function cuenta() {
-    factura = contador * destinos[destino.val()];
+    factura = contadorTercios * destinos[destino.val()].tercio+contadorBotellines*destinos[destino.val()].botellin;
     importe.text(factura.toFixed(2));
 
 }
