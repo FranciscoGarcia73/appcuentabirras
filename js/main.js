@@ -61,35 +61,6 @@ function contarBotellines(valor) {
 
 }
 
-// function sumandoTercios() {
-//     contadorTercios = contadorTercios + 1;
-//     displayTercios.text(contadorTercios);
-//     cuenta();
-
-// }
-
-// function restandoTercios() {
-//     if (contadorTercios > 0) {
-//         contadorTercios = contadorTercios - 1;
-//         displayTercios.text(contadorTercios);
-//         cuenta();
-//     }
-// }
-
-// function sumandoBotellines() {
-//     contadorBotellines = contadorBotellines + 1;
-//     displayBotellines.text(contadorBotellines);
-//     cuenta();
-
-// }
-
-// function restandoBotellines() {
-//     if (contadorBotellines > 0) {
-//         contadorBotellines = contadorBotellines - 1;
-//         displayBotellines.text(contadorBotellines);
-//         cuenta();
-//     }
-// }
 
 function cuenta() {
     factura = contadorTercios * destinos[destino.val()].tercio+contadorBotellines*destinos[destino.val()].botellin;
