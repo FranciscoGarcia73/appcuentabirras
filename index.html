@@ -48,43 +48,41 @@
     </header>
     <main>
       <div class="container">
-        <!-- <div class="imagen">
-          <img
-            src="./images/mahou-clasica-removebg-preview.png"
-            alt="Tercio de Mahou"
-          />
-        </div> -->
         <div class="consolaTercios">
           <button id="sumarTercios">
             <i class="fas fa-plus"></i>
           </button>
-          <div>
+          <div class="display-tercios">
             <p id="contadorTercios"></p>
+            <p class="bebida">Tercios</p>
           </div>
-          <p class="bebida">Tercios</p>
           <button id="restarTercios"><i class="fas fa-minus"></i></button>
         </div>
         <div class="consolaBotellines">
           <button id="sumarBotellines">
             <i class="fas fa-plus"></i>
           </button>
-          <p id="contadorBotellines"></p>
-          <p class="bebida">Botellines</p>
+          <div class="display-botellines">
+            <p id="contadorBotellines"></p>
+            <p class="bebida">Botellines</p>
+          </div>
           <button id="restarBotellines"><i class="fas fa-minus"></i></button>
         </div>
         <div class="bares">
           <select name="destino" id="destino">
-            <option value="" selected>selecciona un bar</option>
+            <option value="" selected="selecciona un bar">
+              selecciona un bar
+            </option>
             <option value="losClaveles">Los Claveles</option>
             <option value="trujillo">Trujillo</option>
             <option value="deseosDeCatrina">Deseos de Catrina</option>
             <option value="sidreria">Sidreria el Norte</option>
             <option value="verde">Green Village</option>
-            <option value="galarzas">Galarza´s</option>
           </select>
         </div>
         <hr />
         <p class="cuenta">El importe total es <span id="importe"></span> €</p>
+        <button class="pagar no-display"></button>
       </div>
     </main>
     <script src="js/main.js"></script>
