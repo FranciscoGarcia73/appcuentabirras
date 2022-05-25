@@ -12,8 +12,8 @@ let factura = 0;
 
 const destinos = {
   losClaveles: {
-    tercio: 1.6,
-    botellin: 1.4,
+    tercio: 1.7,
+    botellin: 1.5,
   },
   trujillo: {
     tercio: 2.75,
