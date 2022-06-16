@@ -24,7 +24,7 @@ const destinos = {
     botellin: 1.6,
   },
   sidreria: {
-    tercio: 2.6,
+    tercio: 2.7,
     botellin: 1.6,
   },
   verde: {
