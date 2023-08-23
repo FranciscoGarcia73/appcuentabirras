@@ -12,27 +12,27 @@ let factura = 0;
 
 const destinos = {
   losClaveles: {
-    tercio: 1.7,
-    botellin: 1.5,
+    tercio: 1.8,
+    botellin: 1.8,
   },
   trujillo: {
-    tercio: 2.75,
-    botellin: 1.6,
+    tercio: 2.9,
+    botellin: 1.8,
   },
   deseosDeCatrina: {
-    tercio: 2.4,
-    botellin: 1.6,
+    tercio: 2.5,
+    botellin: 1.8,
   },
   sidreria: {
-    tercio: 2.7,
-    botellin: 1.6,
+    tercio: 2.9,
+    botellin: 1.9,
   },
   verde: {
-    tercio: 2.4,
-    botellin: 1.5,
+    tercio: 2.5,
+    botellin: 1.8,
   },
   pimpam: {
-    tercio: 2.6,
+    tercio: 2.7,
     botellin: 0,
   },
 };
